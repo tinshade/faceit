@@ -191,6 +191,8 @@ SIMPLE_JWT = {
     )
 }
 
+DOMAIN = ('http://fazeit.herokuapp.com/#/static/common/')
+
 DJOSER = {
     'LOGIN_FIELD': 'email',
     'USER_CREATE_PASSWORD_RETYPE': True,
