@@ -16,8 +16,7 @@ class Pseudo(APIView):
 	permission_classes = [AllowAny] 
 	def get(self, request, format=None):
 		user = User.objects.get(id=request.headers['Authorization'])
-		pseudousers = Pseudousers.objects.all()
-		pseudousers.filter(user_id=request.headers['Authorization'])
+		pseudousers = Pseudousers.objects.filter(user=request.headers['Authorization'])
 		serializer = PseudoSerializer(pseudousers, many=True)
 		return Response({'pseudoers': serializer.data}, status=status.HTTP_200_OK)
 

@@ -13,24 +13,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 from datetime import timedelta
 import urllib
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'g=!&gyqa-qj3q(=-(=$gxrcb_-zb4l)b!#6xa2hrj_m5kxyet)'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +33,8 @@ INSTALLED_APPS = [
     'pseudo',
     'clientdev',
     'filez',
+    'threats',
+    'activity',
     'social_django',
     'rest_framework_simplejwt',
     #'rest_framework_simplejwt.token_blacklist'
@@ -124,8 +113,6 @@ EMAIL_HOST_USER = 'dae2dra@gmail.com'
 EMAIL_HOST_PASSWORD = '#Abhishek98'
 EMAIL_USE_TLS = True
 
-# Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -142,10 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/3.0/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -155,9 +138,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -191,7 +171,7 @@ SIMPLE_JWT = {
     )
 }
 
-DOMAIN = ('http://fazeit.herokuapp.com/#/static/common/')
+DOMAIN = ('fazeit.herokuapp.com/#/static/common')
 
 DJOSER = {
     'LOGIN_FIELD': 'email',

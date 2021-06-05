@@ -57,7 +57,7 @@ class Generate(APIView):
 		with open(os.path.join(settings.MEDIA_ROOT, f'{filename}'), 'w') as output:
 			json.dump(config, output)
 
-		return Response({'link': f'http://localhost:8000/media/{filename}'}, status=status.HTTP_201_CREATED)
+		return Response({'link': f'http://fazeit.herokuapp.com/media/{filename}'}, status=status.HTTP_201_CREATED)
 
 	def delete(self, request, format=None):
 		permission_classes = [AllowAny]

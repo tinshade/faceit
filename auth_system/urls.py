@@ -11,6 +11,8 @@ urlpatterns = [
     path('pseudo/', include('pseudo.urls'), name="pseudo"),
     path('devices/', include('clientdev.urls'), name="devices"),
     path('filez/', include('filez.urls'), name="filez"),
+    path('threats/', include('threats.urls'), name="threats"),
+    path('activity/', include('activity.urls'), name="activity"),
     path('', TemplateView.as_view(template_name="index.html"))
 ]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 

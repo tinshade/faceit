@@ -18,9 +18,14 @@ class FileActions(APIView):
 	def get(self, request, format=None):
 		user_id = request.headers["Authorization"]
 		filez_stream = FilesData.objects.all()
-		filez = filez_stream.filter(user_id=user_id)
+		data = request.headers['Authorization'].split('&')
+		if len(data)>1:
+			filez = filez_stream.filter(user_id=int(data[0]), month=str(data[1]))
+		else:
+			filez = filez_stream.filter(user_id=int(data[0]))
+		#filez = filez_stream.filter(user_id=user_id)
 		serializer = FilezDataSerializer(filez, many=True)
-		print(serializer.data)
+		#print(serializer.data)
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
 	def post(self, request, format=None):

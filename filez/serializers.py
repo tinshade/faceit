@@ -6,4 +6,4 @@ User = get_user_model()
 class FilezDataSerializer(ModelSerializer):
     class Meta:
         model = FilesData
-        fields = ('user','file_id','file_owner','file_name','file_ext','file_size','file_og_location','file_og_checksum','file_enc_checksum','date_secured','purge_scheduled','enc_level')
+        fields = ('user','file_id','file_owner','file_name','file_ext','file_size','file_og_location','file_og_checksum','file_enc_checksum','date_secured','purge_scheduled','enc_level', 'month')

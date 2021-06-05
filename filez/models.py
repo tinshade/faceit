@@ -16,6 +16,7 @@ class FilezData(models.Model):
     date_secured = models.CharField(max_length = 100, blank=True)
     purge_scheduled = models.BooleanField(default=0, blank=False, null=False)
     enc_level = models.CharField(max_length=10, blank=True)
+    month = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
         return f"{self.file_owner}'s_Files"
@@ -32,6 +33,7 @@ class FilesData(models.Model):
     date_secured = models.CharField(max_length = 100, blank=True)
     purge_scheduled = models.BooleanField(default=0, blank=False, null=False)
     enc_level = models.CharField(max_length=10, blank=True)
+    month = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
         return f"{self.file_owner}'s_Files"
