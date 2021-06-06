@@ -34,9 +34,13 @@ class ActivityActions(APIView):
 
 
 	def put(self, request, format=None):
-		threat = ActivityLog.objects.get(user_id = request.headers["Authorization"], month = request.data['month'])
-		times_used = threat['times_used']+1
-		serializer = ActivitySerializer(threat, data={'times_used': times_used}, partial=True)
+		actm = ActivityLog.objects.get(user = request.data["user"], month = request.data['month'])
+		act = ActivityLog.objects.filter(user = request.data["user"], month = request.data['month'])
+		times_used = 0
+		for each in act.values():
+			request.data['times_used'] = each['times_used']+1
+
+		serializer = ActivitySerializer(actm, data=request.data, partial=True)
 		if serializer.is_valid():
 			serializer.save()
 			return Response(serializer.data, status = status.HTTP_200_OK)

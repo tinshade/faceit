@@ -1,24 +1,20 @@
 {
   "files": {
     "main.css": "./static/css/main.af44d52d.chunk.css",
-    "main.js": "./static/js/main.b0f99644.chunk.js",
-    "main.js.map": "./static/js/main.b0f99644.chunk.js.map",
+    "main.js": "./static/js/main.96e4715b.chunk.js",
+    "main.js.map": "./static/js/main.96e4715b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.309004fa.js",
     "runtime-main.js.map": "./static/js/runtime-main.309004fa.js.map",
     "static/css/2.09c74b70.chunk.css": "./static/css/2.09c74b70.chunk.css",
-    "static/js/2.91c19ee6.chunk.js": "./static/js/2.91c19ee6.chunk.js",
-    "static/js/2.91c19ee6.chunk.js.map": "./static/js/2.91c19ee6.chunk.js.map",
+    "static/js/2.dcbcde0e.chunk.js": "./static/js/2.dcbcde0e.chunk.js",
+    "static/js/2.dcbcde0e.chunk.js.map": "./static/js/2.dcbcde0e.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.524aa0542c8328b19064601d2dc87b72.js": "./precache-manifest.524aa0542c8328b19064601d2dc87b72.js",
+    "precache-manifest.14a2acda181a4d0036e794b12522f280.js": "./precache-manifest.14a2acda181a4d0036e794b12522f280.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.09c74b70.chunk.css.map": "./static/css/2.09c74b70.chunk.css.map",
     "static/css/main.af44d52d.chunk.css.map": "./static/css/main.af44d52d.chunk.css.map",
-    "static/js/2.91c19ee6.chunk.js.LICENSE.txt": "./static/js/2.91c19ee6.chunk.js.LICENSE.txt",
+    "static/js/2.dcbcde0e.chunk.js.LICENSE.txt": "./static/js/2.dcbcde0e.chunk.js.LICENSE.txt",
     "static/media/2fa.svg": "./static/media/2fa.b520adc5.svg",
-    "static/media/2fa1.svg": "./static/media/2fa1.018f4307.svg",
-    "static/media/2fa2.svg": "./static/media/2fa2.93c55dd1.svg",
-    "static/media/2fa3.svg": "./static/media/2fa3.52fcda29.svg",
-    "static/media/2fa4.svg": "./static/media/2fa4.622f777e.svg",
     "static/media/custom.css": "./static/media/wave.796f95b2.svg",
     "static/media/anime3.png": "./static/media/anime3.bd6820f1.png",
     "static/media/deletion.gif": "./static/media/deletion.e3dfdb30.gif",
@@ -33,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.309004fa.js",
     "static/css/2.09c74b70.chunk.css",
-    "static/js/2.91c19ee6.chunk.js",
+    "static/js/2.dcbcde0e.chunk.js",
     "static/css/main.af44d52d.chunk.css",
-    "static/js/main.b0f99644.chunk.js"
+    "static/js/main.96e4715b.chunk.js"
   ]
 }

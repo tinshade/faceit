@@ -10,4 +10,4 @@ class ActivityLog(models.Model):
 
 
     def __str__(self):
-        return f"{user}'s Activity Log"
+        return f"{self.user}'s Activity Log"
